@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UE4 Projects\\NotMonkeyBall2\\Source\\NotMonkeyBall2\\NotMonkeyBall2.Build.cs",
+		"D:\\UE4 Projects\\NotMonkeyBall2\\Source\\NotMonkeyBall2.Target.cs",
+		"D:\\UE4 Projects\\NotMonkeyBall2\\Source\\NotMonkeyBall2Editor.Target.cs"
+	],
+	"EngineVersion": "4.25.4"
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "NotMonkeyBall2",
+			"Path": "D:\\UE4 Projects\\NotMonkeyBall2\\Source\\NotMonkeyBall2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "NotMonkeyBall2Editor",
+			"Path": "D:\\UE4 Projects\\NotMonkeyBall2\\Source\\NotMonkeyBall2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
