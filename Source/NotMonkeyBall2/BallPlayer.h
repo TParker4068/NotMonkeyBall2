@@ -30,20 +30,27 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Forces")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float MovementForce;
 	
 	void MoveUp(float Value);
 	void MoveRight(float Value);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Forces")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float JumpImpulse;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
+	float XAxisRotationSpeed;
+	void RotateCameraX(float Value);
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
+	float YAxisRotationSpeed;
+	void RotateCameraY(float Value);
+
 	void Jump();
-
-	void RotateCamera(float Value);
-
-	void ResetCameraRotation();
+	bool CanJump();
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Control")
+	float JumpCheckLineLength;
+	
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))

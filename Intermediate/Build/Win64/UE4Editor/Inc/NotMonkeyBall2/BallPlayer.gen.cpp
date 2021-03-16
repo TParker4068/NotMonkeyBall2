@@ -47,6 +47,18 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpCheckLineLength_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpCheckLineLength;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YAxisRotationSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_YAxisRotationSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_XAxisRotationSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_XAxisRotationSpeed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpImpulse_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpImpulse;
@@ -97,15 +109,36 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_Mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_Mesh_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpCheckLineLength_MetaData[] = {
+		{ "Category", "Control" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpCheckLineLength = { "JumpCheckLineLength", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, JumpCheckLineLength), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpCheckLineLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpCheckLineLength_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed_MetaData[] = {
+		{ "Category", "Control" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed = { "YAxisRotationSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, YAxisRotationSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData[] = {
+		{ "Category", "Control" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed = { "XAxisRotationSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, XAxisRotationSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData[] = {
-		{ "Category", "Forces" },
+		{ "Category", "Control" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse = { "JumpImpulse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, JumpImpulse), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData[] = {
-		{ "Category", "Forces" },
+		{ "Category", "Control" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
 	};
 #endif
@@ -114,6 +147,9 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_Mesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpCheckLineLength,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce,
 	};
@@ -144,7 +180,7 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABallPlayer, 96106817);
+	IMPLEMENT_CLASS(ABallPlayer, 595625145);
 	template<> NOTMONKEYBALL2_API UClass* StaticClass<ABallPlayer>()
 	{
 		return ABallPlayer::StaticClass();
