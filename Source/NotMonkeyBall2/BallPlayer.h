@@ -8,7 +8,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
-
+class APlayerControllerBase;
 UCLASS()
 class NOTMONKEYBALL2_API ABallPlayer : public APawn
 {
@@ -62,7 +62,7 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		UCameraComponent* Camera;
 
-	
+	APlayerController* PlayerControllerRef;
 
 	
 

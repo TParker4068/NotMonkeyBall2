@@ -29,7 +29,7 @@ ABallPlayer::ABallPlayer()
 void ABallPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	PlayerControllerRef = Cast<APlayerController>(GetController());
 }
 
 // Called every frame
