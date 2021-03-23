@@ -63,6 +63,10 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpImpulse;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TopSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TopSpeed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MovementForce_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MovementForce;
@@ -137,6 +141,13 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse = { "JumpImpulse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, JumpImpulse), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData[] = {
+		{ "Category", "Control" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed = { "TopSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, TopSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData[] = {
 		{ "Category", "Control" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
@@ -151,6 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABallPlayer_Statics::StaticCppClassTypeInfo = {
@@ -180,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABallPlayer, 595625145);
+	IMPLEMENT_CLASS(ABallPlayer, 3823009561);
 	template<> NOTMONKEYBALL2_API UClass* StaticClass<ABallPlayer>()
 	{
 		return ABallPlayer::StaticClass();

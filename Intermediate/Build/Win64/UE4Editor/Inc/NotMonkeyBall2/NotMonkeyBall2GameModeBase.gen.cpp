@@ -100,11 +100,6 @@ void EmptyLinkFunctionForGeneratedCodeNotMonkeyBall2GameModeBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bTimerActive_MetaData[];
-#endif
-		static void NewProp_bTimerActive_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bTimerActive;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartDelay_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_StartDelay;
@@ -129,17 +124,6 @@ void EmptyLinkFunctionForGeneratedCodeNotMonkeyBall2GameModeBase() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive_MetaData[] = {
-		{ "Category", "Game Loop" },
-		{ "ModuleRelativePath", "NotMonkeyBall2GameModeBase.h" },
-	};
-#endif
-	void Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive_SetBit(void* Obj)
-	{
-		((ANotMonkeyBall2GameModeBase*)Obj)->bTimerActive = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive = { "bTimerActive", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ANotMonkeyBall2GameModeBase), &Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive_SetBit, METADATA_PARAMS(Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_StartDelay_MetaData[] = {
 		{ "Category", "Game Loop" },
 		{ "ModuleRelativePath", "NotMonkeyBall2GameModeBase.h" },
@@ -147,7 +131,6 @@ void EmptyLinkFunctionForGeneratedCodeNotMonkeyBall2GameModeBase() {}
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_StartDelay = { "StartDelay", nullptr, (EPropertyFlags)0x0020080000010015, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANotMonkeyBall2GameModeBase, StartDelay), METADATA_PARAMS(Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_StartDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_StartDelay_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_bTimerActive,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::NewProp_StartDelay,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANotMonkeyBall2GameModeBase_Statics::StaticCppClassTypeInfo = {
@@ -177,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeNotMonkeyBall2GameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANotMonkeyBall2GameModeBase, 3207800895);
+	IMPLEMENT_CLASS(ANotMonkeyBall2GameModeBase, 1474597262);
 	template<> NOTMONKEYBALL2_API UClass* StaticClass<ANotMonkeyBall2GameModeBase>()
 	{
 		return ANotMonkeyBall2GameModeBase::StaticClass();

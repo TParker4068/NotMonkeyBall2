@@ -69,8 +69,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANotMonkeyBall2GameModeBase); \
 
 
 #define NotMonkeyBall2_Source_NotMonkeyBall2_NotMonkeyBall2GameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__StartDelay() { return STRUCT_OFFSET(ANotMonkeyBall2GameModeBase, StartDelay); } \
-	FORCEINLINE static uint32 __PPO__bTimerActive() { return STRUCT_OFFSET(ANotMonkeyBall2GameModeBase, bTimerActive); }
+	FORCEINLINE static uint32 __PPO__StartDelay() { return STRUCT_OFFSET(ANotMonkeyBall2GameModeBase, StartDelay); }
 
 
 #define NotMonkeyBall2_Source_NotMonkeyBall2_NotMonkeyBall2GameModeBase_h_14_PROLOG \

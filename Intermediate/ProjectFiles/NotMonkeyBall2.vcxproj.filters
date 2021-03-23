@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NotMonkeyBall2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{61748F3F-9663-4533-AE43-C4FC1C36C241}</UniqueIdentifier>
+      <UniqueIdentifier>{C9F0F068-E83E-4051-9BAD-4A5BA6164655}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NotMonkeyBall2.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FCC27A03-0536-4A82-8725-61F7359687BC}</UniqueIdentifier>
+      <UniqueIdentifier>{B42527F6-F31C-44A9-9EC7-D39B943BCD33}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NotMonkeyBall2">
-      <UniqueIdentifier>{81292209-4F89-47B8-A23D-59C21B577157}</UniqueIdentifier>
+      <UniqueIdentifier>{E1BAC5FD-2F2F-4F21-BAD3-A6A81E414185}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\BallPlayer.cpp">
       <Filter>Source\NotMonkeyBall2</Filter>
@@ -52,10 +52,22 @@
     <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameModeBase.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2HUDBase.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2HUDBase.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.cpp">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\TimerActorBase.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\TimerActorBase.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
   </ItemGroup>

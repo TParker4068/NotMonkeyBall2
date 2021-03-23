@@ -32,6 +32,9 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float MovementForce;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
+	float TopSpeed;
 	
 	void MoveUp(float Value);
 	void MoveRight(float Value);

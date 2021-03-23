@@ -36,8 +36,14 @@ void ABallPlayer::BeginPlay()
 void ABallPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//UE_LOG(LogTemp, Warning, TEXT("The Pawn's Z-Axis velocity is %f"), Mesh->GetComponentVelocity().Z);
+	//UE_LOG(LogTemp, Warning, TEXT("The Pawn's speed is %f"), Mesh->GetComponentVelocity().Size());
 
+	if (Mesh->GetComponentVelocity().Size() > TopSpeed) {
+		FVector PawnVelocity = Mesh->GetComponentVelocity();
+		PawnVelocity.Normalize();
+		FVector ReduceSpeedForce = PawnVelocity * -MovementForce;
+		Mesh->AddForce(ReduceSpeedForce);
+	}
 }
 
 // Called to bind functionality to input
