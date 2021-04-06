@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NotMonkeyBall2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C77AD178-4311-4895-9F87-FB561E69C202}</UniqueIdentifier>
+      <UniqueIdentifier>{36B782A8-D19E-43B5-95A9-44D9986A684D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NotMonkeyBall2.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{85E827A8-D747-4DF4-B8A9-31495C19EA28}</UniqueIdentifier>
+      <UniqueIdentifier>{010E148D-8DBA-4A79-977D-6E122E2C213F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,20 +29,8 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NotMonkeyBall2">
-      <UniqueIdentifier>{D55A44F4-6B59-4B1C-A536-BF1D601775EB}</UniqueIdentifier>
+      <UniqueIdentifier>{3A4A9166-5B1C-4332-8187-38AE8C11EDB7}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\BallPlayer.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\BallPlayer.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\GameInstanceRef.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\GameInstanceRef.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
     <None Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2.Build.cs">
       <Filter>Source\NotMonkeyBall2</Filter>
     </None>
@@ -52,53 +40,65 @@
     <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\NotMonkeyBall2\Game">
+      <UniqueIdentifier>{83afd33b-f7ef-4d70-adbf-fde2f688c13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NotMonkeyBall2\Player">
+      <UniqueIdentifier>{0a8245fe-1f4d-40c1-8149-358bc045a0f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NotMonkeyBall2\Trigger">
+      <UniqueIdentifier>{ad65b9cf-94fc-4745-8424-5ab606d0da66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NotMonkeyBall2\Timer">
+      <UniqueIdentifier>{e4fa8665-a400-439e-83f5-e964b9058d3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+      <Filter>Source\NotMonkeyBall2\Game</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameModeBase.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+      <Filter>Source\NotMonkeyBall2\Game</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameModeBase.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2HUDBase.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\BallPlayer.cpp">
+      <Filter>Source\NotMonkeyBall2\Player</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2HUDBase.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\OOBTrigger.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\OOBTrigger.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+      <Filter>Source\NotMonkeyBall2\Player</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\TimerActorBase.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\OOBTrigger.cpp">
+      <Filter>Source\NotMonkeyBall2\Trigger</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\TimerActorBase.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\VictorTrigger.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
+      <Filter>Source\NotMonkeyBall2\Trigger</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\VictorTrigger.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\TimerActorBase.cpp">
+      <Filter>Source\NotMonkeyBall2\Timer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.h">
+      <Filter>Source\NotMonkeyBall2\Game</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\NotMonkeyBall2\VictoryTrigger.cpp">
-      <Filter>Source\NotMonkeyBall2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NotMonkeyBall2\VictoryTrigger.h">
-      <Filter>Source\NotMonkeyBall2</Filter>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameModeBase.h">
+      <Filter>Source\NotMonkeyBall2\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\BallPlayer.h">
+      <Filter>Source\NotMonkeyBall2\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.h">
+      <Filter>Source\NotMonkeyBall2\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\OOBTrigger.h">
+      <Filter>Source\NotMonkeyBall2\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\VictorTrigger.h">
+      <Filter>Source\NotMonkeyBall2\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\TimerActorBase.h">
+      <Filter>Source\NotMonkeyBall2\Timer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
