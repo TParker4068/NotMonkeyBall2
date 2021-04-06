@@ -24,7 +24,7 @@ void ATimerActorBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	UE_LOG(LogTemp, Warning, TEXT("Time remaining is %f"), TimeRemaining);
+	//UE_LOG(LogTemp, Warning, TEXT("Time remaining is %f"), TimeRemaining);
 
 	if (bTimerActive) {
 		TimeRemaining -= DeltaTime;

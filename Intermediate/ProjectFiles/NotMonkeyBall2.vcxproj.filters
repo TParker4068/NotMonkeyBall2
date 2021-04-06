@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NotMonkeyBall2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C9F0F068-E83E-4051-9BAD-4A5BA6164655}</UniqueIdentifier>
+      <UniqueIdentifier>{C77AD178-4311-4895-9F87-FB561E69C202}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NotMonkeyBall2.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B42527F6-F31C-44A9-9EC7-D39B943BCD33}</UniqueIdentifier>
+      <UniqueIdentifier>{85E827A8-D747-4DF4-B8A9-31495C19EA28}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -29,12 +29,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NotMonkeyBall2">
-      <UniqueIdentifier>{E1BAC5FD-2F2F-4F21-BAD3-A6A81E414185}</UniqueIdentifier>
+      <UniqueIdentifier>{D55A44F4-6B59-4B1C-A536-BF1D601775EB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\BallPlayer.cpp">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NotMonkeyBall2\BallPlayer.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\GameInstanceRef.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\GameInstanceRef.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
     <None Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2.Build.cs">
@@ -44,6 +50,12 @@
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2GameModeBase.cpp">
@@ -58,6 +70,12 @@
     <ClInclude Include="..\..\Source\NotMonkeyBall2\NotMonkeyBall2HUDBase.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\OOBTrigger.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\OOBTrigger.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NotMonkeyBall2\PlayerControllerBase.cpp">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClCompile>
@@ -68,6 +86,18 @@
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NotMonkeyBall2\TimerActorBase.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\VictorTrigger.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\VictorTrigger.h">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NotMonkeyBall2\VictoryTrigger.cpp">
+      <Filter>Source\NotMonkeyBall2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NotMonkeyBall2\VictoryTrigger.h">
       <Filter>Source\NotMonkeyBall2</Filter>
     </ClInclude>
   </ItemGroup>

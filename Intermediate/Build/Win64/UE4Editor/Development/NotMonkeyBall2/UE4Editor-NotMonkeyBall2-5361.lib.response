@@ -1,0 +1,33 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-NotMonkeyBall2-5361.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\NotMonkeyBall2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\BallPlayer.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\GameInstanceRef.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2GameModeBase.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2HUDBase.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\OOBTrigger.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\PlayerControllerBase.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\TimerActorBase.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\VictorTrigger.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\VictoryTrigger.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\BallPlayer.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\GameInstanceRef.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2.init.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2GameInstanceBase.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2GameModeBase.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\NotMonkeyBall2HUDBase.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\OOBTrigger.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\PlayerControllerBase.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\TimerActorBase.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\VictorTrigger.gen.cpp.obj"
+"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\Default.rc2.res"
+/OUT:"D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\UE4Editor-NotMonkeyBall2-5361.lib"
+/INCLUDE:IMPLEMENT_MODULE_NotMonkeyBall2

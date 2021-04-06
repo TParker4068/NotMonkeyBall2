@@ -1,5 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
+#include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "NotMonkeyBall2/PlayerControllerBase.h"
 #include "NotMonkeyBall2GameModeBase.h"
@@ -14,7 +15,9 @@ void ANotMonkeyBall2GameModeBase::BeginPlay()
 
 void ANotMonkeyBall2GameModeBase::HandleGameStart()
 {
+	
 	PlayerControllerRef = Cast<APlayerControllerBase>(UGameplayStatics::GetPlayerController(this, 0));
+	PlayerControllerRef->bShowMouseCursor = false;
 	GameStart();
 
 	if (PlayerControllerRef)
@@ -30,5 +33,7 @@ void ANotMonkeyBall2GameModeBase::HandleGameStart()
 
 void ANotMonkeyBall2GameModeBase::HandleGameEnd(bool PlayerWon)
 {
+	PlayerControllerRef->bShowMouseCursor = true;	
+	UGameplayStatics::SetGamePaused(GetWorld(), true);
 	GameEnd(PlayerWon);
 }
