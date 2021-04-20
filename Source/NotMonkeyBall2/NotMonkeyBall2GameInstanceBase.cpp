@@ -18,7 +18,7 @@ void UNotMonkeyBall2GameInstanceBase::LoadNextLevel()
     int NextLevel = CurrentLevel + 1;
     FName LevelToLoad = FName(LevelNames[NextLevel]);
     UGameplayStatics::OpenLevel(GetWorld(), LevelToLoad);
-    CurrentLevel++;
+    ++CurrentLevel;
 }
 
 void UNotMonkeyBall2GameInstanceBase::ReloadLevel()
@@ -29,16 +29,16 @@ void UNotMonkeyBall2GameInstanceBase::ReloadLevel()
 }
 
 void UNotMonkeyBall2GameInstanceBase::GetAllMapNames(TArray<FString> &Names) {
+    //Creates library of all maps in a folder
     auto ObjectLibrary = UObjectLibrary::CreateLibrary(UWorld::StaticClass(), false, true);
     ObjectLibrary->LoadAssetDataFromPath(TEXT("/Game/Maps"));
+    //Adds data to an iterable array
     TArray<FAssetData> AssetDatas;
     ObjectLibrary->GetAssetDataList(AssetDatas);
     UE_LOG(LogTemp, Warning, TEXT("Found maps: %d"), AssetDatas.Num());
-
-    for (int32 i = 0; i < AssetDatas.Num(); ++i)
+    //Iterates through to create a new array of just the map names
+    for (FAssetData& AssetData : AssetDatas)
     {
-        FAssetData& AssetData = AssetDatas[i];
-
         auto name = AssetData.AssetName.ToString();
         Names.Add(name);
     }

@@ -15,11 +15,13 @@ void ANotMonkeyBall2GameModeBase::BeginPlay()
 
 void ANotMonkeyBall2GameModeBase::HandleGameStart()
 {
-	
+	//Gets reference to player 1's controller class
 	PlayerControllerRef = Cast<APlayerControllerBase>(UGameplayStatics::GetPlayerController(this, 0));
 	PlayerControllerRef->bShowMouseCursor = false;
+	//Calls game start UIWidget set in blueprint
 	GameStart();
 
+	//Temporarily disables player input to sync with UIWidget countdown
 	if (PlayerControllerRef)
 	{
 		PlayerControllerRef->SetPlayerEnableState(false);
@@ -35,5 +37,6 @@ void ANotMonkeyBall2GameModeBase::HandleGameEnd(bool PlayerWon)
 {
 	PlayerControllerRef->bShowMouseCursor = true;	
 	UGameplayStatics::SetGamePaused(GetWorld(), true);
+	//Calls game end UIWidget set in blueprint
 	GameEnd(PlayerWon);
 }

@@ -19,6 +19,7 @@ AVictorTrigger::AVictorTrigger()
 void AVictorTrigger::BeginPlay()
 {
 	Super::BeginPlay();
+	//Finds current game mode and player 1
 	GameModeRef = Cast<ANotMonkeyBall2GameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 	PlayerRef = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 }

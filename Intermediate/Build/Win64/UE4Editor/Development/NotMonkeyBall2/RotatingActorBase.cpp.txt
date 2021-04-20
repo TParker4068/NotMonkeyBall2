@@ -1,0 +1,3 @@
+D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Development\NotMonkeyBall2\Definitions.NotMonkeyBall2.h
+D:\UE4 Projects\NotMonkeyBall2\Source\NotMonkeyBall2\RotatingActorBase.h
+D:\UE4 Projects\NotMonkeyBall2\Intermediate\Build\Win64\UE4Editor\Inc\NotMonkeyBall2\RotatingActorBase.generated.h

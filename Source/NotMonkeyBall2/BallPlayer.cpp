@@ -38,6 +38,7 @@ void ABallPlayer::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	//UE_LOG(LogTemp, Warning, TEXT("The Pawn's speed is %f"), Mesh->GetComponentVelocity().Size());
 
+	//Limits speed of player
 	if (Mesh->GetComponentVelocity().Size() > TopSpeed) {
 		FVector PawnVelocity = Mesh->GetComponentVelocity();
 		PawnVelocity.Normalize();
@@ -105,7 +106,7 @@ bool ABallPlayer::CanJump()
 	//Points line downwards
 	FRotator Rotation = FRotator(-90, 0, 0);
 	FVector End = Origin + Rotation.Vector() * JumpCheckLineLength;
-	UE_LOG(LogTemp, Warning, TEXT("Vector is %s"), *End.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("Vector is %s"), *End.ToString());
 	FHitResult OutHit;
 	FCollisionQueryParams Params;
 	//Makes line ignore the player object, otherwise would always be able to jump

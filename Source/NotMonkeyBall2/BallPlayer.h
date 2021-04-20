@@ -29,7 +29,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+	//Force added when moving
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float MovementForce;
 
@@ -39,9 +39,11 @@ public:
 	void MoveUp(float Value);
 	void MoveRight(float Value);
 
+	//Force added when jumping
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float JumpImpulse;
 
+	//Camera Rotation
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
 	float XAxisRotationSpeed;
 	void RotateCameraX(float Value);
