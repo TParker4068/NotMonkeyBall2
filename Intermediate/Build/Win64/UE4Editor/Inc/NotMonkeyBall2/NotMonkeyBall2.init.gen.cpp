@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeNotMonkeyBall2_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x02D03237,
+				0xD611717E,
 				0x7CD77DDB,
 				METADATA_PARAMS(nullptr, 0)
 			};

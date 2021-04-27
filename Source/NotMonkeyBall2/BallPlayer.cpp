@@ -45,6 +45,21 @@ void ABallPlayer::Tick(float DeltaTime)
 		FVector ReduceSpeedForce = PawnVelocity * -MovementForce;
 		Mesh->AddForce(ReduceSpeedForce);
 	}
+
+	UE_LOG(LogTemp, Warning, TEXT("The current speed is %s"), *Mesh->GetComponentVelocity().ToString());
+
+	//Set SpringArm Length relative to Speed of Ball
+	
+	UpdateSpringArmLength();
+
+}
+
+
+void ABallPlayer::UpdateSpringArmLength()
+{
+	float TargetOffset = (Mesh->GetComponentVelocity().Size() + 1) / SpringArmDivider;
+	float NewTargetArmLength = BaseTargetArmLength + TargetOffset;
+	SpringArm->TargetArmLength = NewTargetArmLength;
 }
 
 // Called to bind functionality to input
@@ -54,7 +69,7 @@ void ABallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	InputComponent->BindAxis("MoveUp", this, &ABallPlayer::MoveUp);
 	InputComponent->BindAxis("MoveRight", this, &ABallPlayer::MoveRight);
 	InputComponent->BindAxis("RotateCameraX", this, &ABallPlayer::RotateCameraX);
-	InputComponent->BindAxis("RotateCameraY", this, &ABallPlayer::RotateCameraY);
+	//InputComponent->BindAxis("RotateCameraY", this, &ABallPlayer::RotateCameraY);
 
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ABallPlayer::Jump);
 }
@@ -106,7 +121,7 @@ bool ABallPlayer::CanJump()
 	//Points line downwards
 	FRotator Rotation = FRotator(-90, 0, 0);
 	FVector End = Origin + Rotation.Vector() * JumpCheckLineLength;
-	//UE_LOG(LogTemp, Warning, TEXT("Vector is %s"), *End.ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("End of jump raycast is %s"), *End.ToString());
 	FHitResult OutHit;
 	FCollisionQueryParams Params;
 	//Makes line ignore the player object, otherwise would always be able to jump

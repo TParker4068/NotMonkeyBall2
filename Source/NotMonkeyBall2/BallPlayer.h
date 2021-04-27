@@ -27,17 +27,25 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	
+
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	//Force added when moving
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Control")
 	float MovementForce;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Control")
 	float TopSpeed;
+
+	//Value speed is divided by to increase SpringArm length
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera Control")
+	float SpringArmDivider;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera Control")
+	float BaseTargetArmLength;
+
 	
-	void MoveUp(float Value);
-	void MoveRight(float Value);
 
 	//Force added when jumping
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Control")
@@ -51,8 +59,6 @@ public:
 	float YAxisRotationSpeed;
 	void RotateCameraY(float Value);
 
-	void Jump();
-	bool CanJump();
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Control")
 	float JumpCheckLineLength;
 	
@@ -69,7 +75,12 @@ private:
 
 	APlayerController* PlayerControllerRef;
 
-	
+	void UpdateSpringArmLength();
 
+	void MoveUp(float Value);
+	void MoveRight(float Value);
+
+	void Jump();
+	bool CanJump();
 
 };

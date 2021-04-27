@@ -63,6 +63,14 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpImpulse;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTargetArmLength_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTargetArmLength;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpringArmDivider_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SpringArmDivider;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TopSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TopSpeed;
@@ -129,31 +137,53 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData[] = {
 		{ "Category", "Control" },
+		{ "Comment", "//Camera Rotation\n" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
+		{ "ToolTip", "Camera Rotation" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed = { "XAxisRotationSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, XAxisRotationSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData[] = {
 		{ "Category", "Control" },
+		{ "Comment", "//Force added when jumping\n" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
+		{ "ToolTip", "Force added when jumping" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse = { "JumpImpulse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, JumpImpulse), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_BaseTargetArmLength_MetaData[] = {
+		{ "Category", "Camera Control" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_BaseTargetArmLength = { "BaseTargetArmLength", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, BaseTargetArmLength), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_BaseTargetArmLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_BaseTargetArmLength_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArmDivider_MetaData[] = {
+		{ "Category", "Camera Control" },
+		{ "Comment", "//Value speed is divided by to increase SpringArm length\n" },
+		{ "ModuleRelativePath", "BallPlayer.h" },
+		{ "ToolTip", "Value speed is divided by to increase SpringArm length" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArmDivider = { "SpringArmDivider", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, SpringArmDivider), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArmDivider_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArmDivider_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData[] = {
 		{ "Category", "Control" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed = { "TopSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, TopSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed = { "TopSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, TopSpeed), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData[] = {
 		{ "Category", "Control" },
+		{ "Comment", "//Force added when moving\n" },
 		{ "ModuleRelativePath", "BallPlayer.h" },
+		{ "ToolTip", "Force added when moving" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce = { "MovementForce", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, MovementForce), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce = { "MovementForce", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABallPlayer, MovementForce), METADATA_PARAMS(Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABallPlayer_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArm,
@@ -162,6 +192,8 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_YAxisRotationSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_XAxisRotationSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_JumpImpulse,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_BaseTargetArmLength,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_SpringArmDivider,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_TopSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABallPlayer_Statics::NewProp_MovementForce,
 	};
@@ -192,7 +224,7 @@ void EmptyLinkFunctionForGeneratedCodeBallPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABallPlayer, 3823009561);
+	IMPLEMENT_CLASS(ABallPlayer, 1662062169);
 	template<> NOTMONKEYBALL2_API UClass* StaticClass<ABallPlayer>()
 	{
 		return ABallPlayer::StaticClass();
